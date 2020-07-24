@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Area</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas:
+                'header header header'
+                'content content sidebar'
+                'box-1 box-2 box-2'
+                'box-3 box-3 box-3'
+                'footer footer footer';
+            gap: 1rem;
+        }
+
+        .header {
+            grid-area: header;
+            text-align: center;
+        }
+
+        .content {
+            grid-area: content;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+        }
+
+        .box-1 {
+            grid-area: box-1;
+        }
+        
+        .box-2 {
+            grid-area: box-2;
+        }
+        
+        .box-3 {
+            grid-area: box-3;
+        }
+
+        .footer {
+            grid-area: footer;
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header"><h1>Welcome</h1></header>
+        <section class="content">
+            <h3>Hello World</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime iste accusamus, veniam, et voluptate animi dolor quo odio, provident perferendis atque a distinctio. Odit ipsum cumque ullam nesciunt, ratione animi enim dolorum quaerat architecto? Eligendi iusto dicta impedit accusamus reiciendis nobis nisi, obcaecati, harum adipisci explicabo consectetur doloribus, at earum unde non. Exercitationem ipsa quidem similique veniam dolorem. Debitis?</p>
+        </section>
+        <aside class="sidebar">
+            <h3>Contact Us</h3>
+            <ul>
+                <li>Some Company</li>
+                <li>50 Main St, Brampton, ON</li>
+                <li>tester@test.test</li>
+                <li>666-666-6666</li>
+            </ul>
+        </aside>
+        <div class="box-1">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eum quidem soluta dolorum molestiae quod dicta maxime enim reprehenderit illum!</p>
+        </div>
+        <div class="box-2">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eum quidem soluta dolorum molestiae quod dicta maxime enim reprehenderit illum!</p>
+        </div>
+        <div class="box-3">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eum quidem soluta dolorum molestiae quod dicta maxime enim reprehenderit illum!</p>
+        </div>
+        <footer class="footer">
+            <p>Copyright &copy; 2020</p>
+        </footer>
+    </div>
+</body>
+</html>
